@@ -1,0 +1,41 @@
+<div id="menu">
+    <ul id="list">
+        <li class="current">
+            <a href="javascript:void(0)">首页</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">HTML</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">CSS</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">JavaScript</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">关于</a>
+        </li>
+        <li>
+            <a href="javascript:void(0)">帮助</a>
+        </li>
+    </ul>
+</div>
+
+<script>
+    // 获取所有的 li 标签
+    var liObjs = document.getElementById("list").getElementsByTagName("li");
+    // 循环遍历，找到每个 li 中的 a，注册点击事件
+    for (var i = 0; i < liObjs.length; i++) {
+        // 每个 li 中的 a
+        var aObj = liObjs[i].firstElementChild;
+
+        aObj.onclick = function () {
+            // 把这个 a 所在的 li 的所有的兄弟元素的类样式全部移除
+            for (var j = 0; j < liObjs.length; j++) {
+                liObjs[j].removeAttribute("class");
+            }
+            //当前点击的 a 的父级元素 li(点击的这个 a 所在的父级元素 li)，设置背景颜色
+            this.parentNode.className = "current";
+        };
+    }
+</script>
