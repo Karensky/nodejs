@@ -1,5 +1,6 @@
 # Node.js
-    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时环境，它允许开发者使用 JavaScript 来构建服务器端应用程序。Node.js 不同于传统的浏览器环境，它专注于提供高效的 I/O 操作、事件驱动的非阻塞架构，以及构建高性能、可扩展的网络应用。
+    Node.js 是一个基于 Chrome V8 引擎的 JavaScript 运行时环境，它允许开发者使用 JavaScript 来构建服务器端应用程序。
+    Node.js 不同于传统的浏览器环境，它专注于提供高效的 I/O 操作、事件驱动的非阻塞架构，以及构建高性能、可扩展的网络应用。
 
 以下是 Node.js 的一些关键特点和重要概念：
 
